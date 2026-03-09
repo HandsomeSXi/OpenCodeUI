@@ -46,7 +46,7 @@ export const CodeBlock = memo(function CodeBlock({
     return (
       <div 
         ref={ref}
-        className={`rounded-lg overflow-hidden bg-bg-300/50 ${className}`} 
+        className={`rounded-lg overflow-hidden bg-bg-100 ${className}`}
         style={containerStyle}
       >
         <div className="overflow-auto custom-scrollbar" style={maxHeight ? { maxHeight } : undefined}>
@@ -69,11 +69,11 @@ export const CodeBlock = memo(function CodeBlock({
   return (
     <div 
       ref={ref}
-      className={`rounded-lg overflow-hidden border border-border-200/50 bg-bg-300 w-full max-w-full flex flex-col my-2 ${className}`} 
+      className={`rounded-lg overflow-hidden border border-border-200/50 bg-bg-100 w-full max-w-full flex flex-col my-2 ${className}`}
       style={style}
     >
       {/* Header with Language and Copy */}
-      <div className="flex items-center justify-between px-3 py-1.5 bg-bg-200/50 border-b border-border-200/50 select-none">
+      <div className="flex items-center justify-between px-3 py-1.5 bg-bg-300/40 border-b border-border-200/50 select-none">
         <span className="text-xs text-text-400 font-medium uppercase tracking-wider">
           {language || 'text'}
         </span>

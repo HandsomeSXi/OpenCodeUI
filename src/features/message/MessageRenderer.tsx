@@ -112,7 +112,7 @@ const CollapsibleUserText = memo(function CollapsibleUserText({ text, collapseEn
   const isCollapsed = showCollapse && !expanded
   
   return (
-    <div className="px-4 py-2.5 bg-bg-300 rounded-2xl max-w-full">
+    <div className="px-4 py-2.5 bg-bg-100 rounded-2xl max-w-full">
       <div className="relative">
         <p
           ref={contentRef}
@@ -123,7 +123,7 @@ const CollapsibleUserText = memo(function CollapsibleUserText({ text, collapseEn
         </p>
         {/* 底部渐变遮罩 */}
         <div 
-          className={`absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-bg-300 to-transparent pointer-events-none transition-opacity duration-300 ${
+          className={`absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-bg-100 to-transparent pointer-events-none transition-opacity duration-300 ${
             isCollapsed ? 'opacity-100' : 'opacity-0'
           }`}
           style={!showCollapse ? { display: 'none' } : undefined}

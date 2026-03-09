@@ -93,9 +93,9 @@ type NeutralThemeColors = Omit<ThemeColors, 'accent'>
 const neutralLight: NeutralThemeColors = {
   background: {
     bg050: '158 18% 99%',
-    bg000: '160 14% 97%',
-    bg100: '165 10% 94%',
-    bg200: '170 8% 90%',
+    bg000: '0 0% 100%',
+    bg100: '0 0% 93%',
+    bg200: '0 0% 100%',
     bg300: '174 8% 84%',
     bg400: '178 8% 77%',
   },
@@ -257,25 +257,25 @@ export const claudeTheme: ThemePreset = {
 // ============================================
 
 const breezeLight: ThemeColors = withAccent(neutralLight, {
-  brand: '187 72% 42%',
-  main000: '187 68% 36%',
-  main100: '187 72% 42%',
-  main200: '187 75% 48%',
-  secondary100: '230 65% 55%',
+  brand: '205 85% 45%',
+  main000: '205 80% 38%',
+  main100: '205 85% 45%',
+  main200: '205 88% 52%',
+  secondary100: '225 70% 58%',
 })
 
 const breezeDark: ThemeColors = withAccent(neutralDark, {
-  brand: '187 65% 52%',
-  main000: '187 60% 46%',
-  main100: '187 65% 52%',
-  main200: '187 68% 58%',
-  secondary100: '230 60% 62%',
+  brand: '205 80% 58%',
+  main000: '205 75% 52%',
+  main100: '205 80% 58%',
+  main200: '205 85% 64%',
+  secondary100: '225 65% 65%',
 })
 
 export const breezeTheme: ThemePreset = {
   id: 'breeze',
   name: 'Breeze',
-  description: 'Neutral UI with cool teal accent',
+  description: 'Neutral UI with sky blue accent',
   light: breezeLight,
   dark: breezeDark,
 }
